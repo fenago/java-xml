@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes purchase request XML document -->
+
+<purchase-request>
+  <purchase>
+    <amount currency='USD'>1016.84</amount>
+    <dateTime>2002-01-04 14:21</dateTime>
+  </purchase>
+  <merchant>
+    <merchant-name>JavaTunes</merchant-name>
+    <business-number>190973</business-number>
+  </merchant>
+  <credit-card type='Visa'>
+    <name-on-card>Bob Smith</name-on-card>
+    <card-number>1987987399918277</card-number>
+    <exp-date>01/04</exp-date>
+  </credit-card>
+</purchase-request>

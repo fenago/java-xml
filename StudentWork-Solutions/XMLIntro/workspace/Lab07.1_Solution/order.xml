@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes order XML document -->
+
+<order xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation='order.xsd'
+       ID='_12050826' dateTime='2002-02-07T16:20:00'>
+  <customer>
+    <name>James Heft</name>
+    <street>455 Meadow St.</street>
+    <city>Lodi</city>
+    <state>CA</state>                               <!-- must be NY | CA | WY -->
+    <zipcode>95112-9876</zipcode>                   <!-- zip-plus4 is also supported -->
+    <shipper name='UPS' accountNum='544-8775-1'/>   <!-- must be USMail | FedEx | UPS -->
+  </customer>
+  <item ID='CD513'>
+    <name>My, I'm Large</name>
+    <artist>Bobs</artist>
+    <releaseDate>1987-02-20</releaseDate>
+    <listPrice>11.97</listPrice>
+    <price>11.97</price>
+  </item>
+  <item ID='CD518'>
+    <name>Escape</name>
+    <artist>Journey</artist>
+    <artist>Seals &amp; Crofts</artist>
+    <releaseDate>1981-02-25</releaseDate>
+    <listPrice>11.97</listPrice>
+    <price/>  <!-- take the default value -->
+  </item>
+</order>

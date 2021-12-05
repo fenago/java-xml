@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes order XML document with namespace support -->
+
+<order ID='03230413' dateTime='2002-03-24 01:20'
+       xmlns:cust='http://www.javatunes.com/customer'
+       xmlns:item='http://www.javatunes.com/item'>
+  <cust:customer>
+    <cust:name title='Ms.'>
+      <cust:firstName>Rachel</cust:firstName>
+      <cust:lastName>Jacobs</cust:lastName>
+    </cust:name>
+    <cust:street>1408 Fell St.</cust:street>
+    <cust:city>Oneida</cust:city>
+    <cust:state>NY</cust:state>
+    <cust:zipcode>14180</cust:zipcode>
+    <cust:shipper name='FedEx' accountNum='77-63-2478'/>
+  </cust:customer>
+  <item:item ID='CD514'>
+    <item:name>So</item:name>
+    <item:artist>Peter Gabriel</item:artist>
+    <item:releaseDate>1986-10-03</item:releaseDate>
+    <item:listPrice>17.97</item:listPrice>
+    <item:price>13.99</item:price>
+  </item:item>
+  <item:item ID='CD506'>
+    <item:name>Seal</item:name>
+    <item:artist>Seal</item:artist>
+    <item:releaseDate>1991-08-18</item:releaseDate>
+    <item:listPrice>17.97</item:listPrice>
+    <item:price>14.99</item:price>
+  </item:item>
+</order>

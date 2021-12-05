@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+ JavaTunes order XML document _011703022002-03-20T05:02:00order.xsd
+  
+    Susan Phillips
+    763 Rodeo Circle
+    San Francisco
+    CA
+    94109
+    UPS343-9080-1
+    UPS 343-9080-1
+  
+  CD514
+    So
+    Peter Gabriel
+    1986-10-03
+    17.97
+    13.99
+  
+  CD517
+    1984
+    Van Halen
+    1984-08-19
+    11.97
+    11.97
+  
+  CD503
+    Trouble is...
+    Kenny Wayne Shepherd Band
+    1997-08-08
+    17.97
+    14.99
+  

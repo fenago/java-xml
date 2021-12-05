@@ -1,0 +1,8 @@
+All programs and source materials in this directory are copyrighted:
+            (c) LearningPatterns, Inc.
+            All Rights Reserved
+
+
+The code and programs are furnished solely for instructional purposes and should not be embedded in any software product.
+
+The software (including instructions for use) is provided "as is" without warranty of any kind; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='unknown'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+
+<!-- this is well-formed and valid, but missing the schema location attribute;
+     a validating parser will flag this as a warning or an error.
+
+     it also specifies an incorrect encoding - try loading it into Internet Explorer -->
+     
+<test type='warning'/>

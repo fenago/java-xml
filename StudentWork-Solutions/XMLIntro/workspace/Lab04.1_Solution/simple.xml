@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- very simple XML document with a reference to its schema -->
+
+<simple xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:noNamespaceSchemaLocation='simple.xsd'>Hey, I'm an XML document</simple>

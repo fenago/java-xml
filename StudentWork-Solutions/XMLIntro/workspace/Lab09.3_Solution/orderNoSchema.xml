@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes order XML document -->
+
+<order ID='_01170302' dateTime='2002-03-20T05:02:00'>
+  <customer>
+    <name>Susan Phillips</name>
+    <street>763 Rodeo Circle</street>
+    <city>San Francisco</city>
+    <state>CA</state>
+    <zipcode>94109</zipcode>
+    <shipper name='UPS' accountNum='343-9080-1'/>
+    <?pager UPS 343-9080-1?>
+  </customer>
+  <item ID='CD514'>
+    <name>So</name>
+    <artist>Peter Gabriel</artist>
+    <releaseDate>1986-10-03</releaseDate>
+    <listPrice>17.97</listPrice>
+    <price>13.99</price>
+  </item>
+  <item ID='CD517'>
+    <name>1984</name>
+    <artist>Van Halen</artist>
+    <releaseDate>1984-08-19</releaseDate>
+    <listPrice>11.97</listPrice>
+    <price>11.97</price>
+  </item>
+  <item ID='CD503'>
+    <name>Trouble is...</name>
+    <artist>Kenny Wayne Shepherd Band</artist>
+    <releaseDate>1997-08-08</releaseDate>
+    <listPrice>17.97</listPrice>
+    <price>14.99</price>
+  </item>
+</order>

@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- schema for JavaTunes order with some useful derived types -->
+
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+  <xsd:element name='order' type='orderType'/>
+
+  <xsd:complexType name='orderType'>
+    <xsd:sequence>
+      <xsd:element name='customer' type='customerType'/>
+      <xsd:element name='item'     type='itemType' maxOccurs='unbounded'/>
+    </xsd:sequence>
+    <xsd:attribute name='ID'       type='xsd:ID'       use='required'/>
+    <xsd:attribute name='dateTime' type='xsd:dateTime' use='required'/>
+  </xsd:complexType>
+
+  <xsd:complexType name='customerType'>
+    <xsd:sequence>
+      <xsd:element name='name'    type='xsd:string'/>
+      <xsd:element name='street'  type='xsd:string'/>
+      <xsd:element name='apt'     type='xsd:string' minOccurs='0'/>
+      <xsd:element name='city'    type='xsd:string'/>
+      <xsd:choice>
+        <xsd:sequence>
+          <xsd:element name='state'   type='USstatesType'/>
+          <xsd:element name='zipcode' type='zipcodeType'/>
+        </xsd:sequence>
+        <xsd:sequence>
+          <xsd:element name='prov'  type='xsd:string'/>
+          <xsd:element name='pcode' type='xsd:string'/>
+        </xsd:sequence>
+      </xsd:choice>
+      <xsd:element name='shipper'>      <!-- uses an anonymous type -->
+        <xsd:complexType>
+          <!-- no content model because shipper is an empty element (<shipper/>) -->
+          <xsd:attribute name='name'       type='shipperNameType' default='USMail'/>
+          <xsd:attribute name='accountNum' type='xsd:string'      use='optional'/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name='itemType'>
+    <xsd:sequence>
+      <xsd:element name='name'        type='xsd:string'/>
+      <xsd:element name='artist'      type='xsd:string' maxOccurs='unbounded'/>
+      <xsd:element name='releaseDate' type='xsd:date'/>
+      <xsd:element name='listPrice'   type='xsd:decimal'/>
+      <xsd:element name='price'       type='xsd:decimal' default='9.99'/>
+    </xsd:sequence>
+    <xsd:attribute name='ID'   type='xsd:ID'      use='required'/>
+    <xsd:attribute name='type' type='xsd:NMTOKEN' default='CD'/>
+  </xsd:complexType>
+
+  <xsd:simpleType name='shipperNameType'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:enumeration value='USMail'/>
+      <xsd:enumeration value='FedEx'/>
+      <xsd:enumeration value='UPS'/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name='zipcodeType'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:pattern value='[0-9]{5}(-[0-9]{4})?'/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name='USstatesType'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:enumeration value='NY'/>
+      <xsd:enumeration value='CA'/>
+      <xsd:enumeration value='WY'/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>

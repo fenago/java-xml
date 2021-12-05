@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- schema for XML documents of type simple -->
+
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+  <xsd:element name='simple' type='xsd:string'/>
+
+</xsd:schema>

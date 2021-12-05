@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- JavaTunes order-summary XML document -->
+<order-summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" total-cost="40.95" sales-region="CA" shipper="UPS" ID="_01170302" xsi:noNamespaceSchemaLocation="order-summary.xsd">
+<artist>Peter Gabriel</artist>
+<artist>Van Halen</artist>
+<artist>Kenny Wayne Shepherd Band</artist>
+</order-summary>

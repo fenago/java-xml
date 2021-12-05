@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes order XML document -->
+
+<order ID='03230413' dateTime='2002-03-24 01:20'>
+  <customer>
+    <name title='Ms.'>
+      <firstName>Rachel</firstName>
+      <lastName>Jacobs</lastName>
+    </name>
+    <street>1408 Fell St.</street>
+    <city>Oneida</city>
+    <state>NY</state>
+    <zipcode>14180</zipcode>
+    <shipper name='FedEx' accountNum='77-63-2478'/>
+  </customer>
+  <item ID='CD514'>
+    <name>So</name>
+    <artist>Peter Gabriel</artist>
+    <releaseDate>1986-10-03</releaseDate>
+    <listPrice>17.97</listPrice>
+    <price>13.99</price>
+  </item>
+  <item ID='CD506'>
+    <name>Seal</name>
+    <artist>Seal</artist>
+    <releaseDate>1991-08-18</releaseDate>
+    <listPrice>17.97</listPrice>
+    <price>14.99</price>
+  </item>
+</order>

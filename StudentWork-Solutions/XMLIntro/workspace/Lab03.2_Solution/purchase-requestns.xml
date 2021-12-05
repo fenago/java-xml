@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes purchase request XML document with namespace support -->
+
+<purchase-request xmlns='http://www.javatunes.com/purchase'>
+  <purchase>
+    <!-- NOTE - some parsers require that the xmlns attribute 
+         appears before a 'regular' attribute that is in that namespace;
+         otherwise you get a 'prefix not bound' message -->
+    <amount xmlns:cur='http://www.monetary.org' cur:currency='USD'>1016.84</amount>
+    <dateTime>2002-01-04 14:21</dateTime>
+  </purchase>
+  <merchant>
+    <merchant-name>JavaTunes</merchant-name>
+    <business-number>190973</business-number>
+  </merchant>
+  <credit-card type='Visa' xmlns='http://www.javatunes.com/credit'>
+    <name-on-card>Bob Smith</name-on-card>
+    <card-number>1987987399918277</card-number>
+    <exp-date>01/04</exp-date>
+  </credit-card>
+</purchase-request>

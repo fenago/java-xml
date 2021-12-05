@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+--><customer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <name>Susan Phillips</name>
+
+    <street>763 Rodeo Circle</street>
+
+    <city>San Francisco</city>
+
+    <state>CA</state>
+
+    <zipcode>94109</zipcode>
+
+    <shipper name="UPS" accountNum="343-9080-1"/>
+
+    <?pager UPS 343-9080-1?>
+
+  </customer>

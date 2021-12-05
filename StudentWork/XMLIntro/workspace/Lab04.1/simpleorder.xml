@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitability for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- JavaTunes order XML document (simplified) -->
+
+<order>
+  <customer>
+    <name>Susan Phillips</name>
+    <street>763 Rodeo Circle</street>
+    <apt>1A</apt>
+    <city>San Francisco</city>
+    <state>CA</state>
+    <zipcode>94109</zipcode>
+    <shipper/>
+  </customer>
+</order>

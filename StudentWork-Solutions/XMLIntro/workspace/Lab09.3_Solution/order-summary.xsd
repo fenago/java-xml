@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright LearningPatterns Inc.
+-->
+
+<!-- schema for JavaTunes order-summary -->
+
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+  <xsd:element name='order-summary'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name='artist' type='xsd:string' maxOccurs='unbounded'/>
+      </xsd:sequence>
+      <xsd:attributeGroup ref='order-summaryAttrGroup'/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:attributeGroup name='order-summaryAttrGroup'>
+    <xsd:attribute name='ID'           type='xsd:ID'          use='required'/>
+    <xsd:attribute name='shipper'      type='shipperNameType' use='required'/>
+    <xsd:attribute name='sales-region' type='USstatesType'    use='required'/>
+    <xsd:attribute name='total-cost'   type='xsd:decimal'     use='required'/>
+  </xsd:attributeGroup>
+
+  <xsd:simpleType name='shipperNameType'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:enumeration value='USMail'/>
+      <xsd:enumeration value='FedEx'/>
+      <xsd:enumeration value='UPS'/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name='USstatesType'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:enumeration value='NY'/>
+      <xsd:enumeration value='CA'/>
+      <xsd:enumeration value='WY'/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>
